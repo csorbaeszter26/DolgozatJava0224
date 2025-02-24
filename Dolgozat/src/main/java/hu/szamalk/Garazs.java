@@ -18,7 +18,7 @@ public class Garazs implements Comparator<Auto>, Serializable {
 
 
 
-    private void rendezes() throws IOException {
+    private void rendezes() {
         try(ObjectOutputStream objKi = new ObjectOutputStream( new FileOutputStream("autok.ser"))){
             objKi.writeObject(autok);
         }catch (IOException e){
@@ -32,7 +32,8 @@ public class Garazs implements Comparator<Auto>, Serializable {
         Collator c = Collator.getInstance();
 
         return Collator.compare(egyik.getFerohely(), masik.getFerohely());
+        //return compare(egyik, masik);
     }
-    ar
 
+    //
 }

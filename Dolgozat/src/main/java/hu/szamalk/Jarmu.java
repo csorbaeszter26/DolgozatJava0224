@@ -62,5 +62,5 @@ public class Jarmu extends Auto implements Comparator<Auto> {
         return Collator.compare(egyik.getFerohely(), masik.getFerohely());
     }
 
-
+    //
 }
